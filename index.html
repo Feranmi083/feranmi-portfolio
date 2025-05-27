@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="spinner"><div class="loading"></div></div>
     <section id="home">
         <header>
             <h1>
@@ -51,13 +50,19 @@
             </button>
         </div>
         <div class="project-grid">
-            <div class="project-item html fade">
-                <h3>Project 1</h3>
-                <p>A HTML project example</p>
+            <div class="project-item html fade" onclick="openModal(
+                'Responsive Landing Page', 'A moblie-first, fully responsive landing page built with HTML, CSS3, and Flexbox. Features smooth scrolling and modern layout.',
+                'https://feranmi083.github.io/feranmi-portfolio/'
+            )">
+                <h3>Landing Page</h3>
+                <p>A mobile-friendly landing page using HTML & CSS</p>
             </div>
-            <div class="project-item js fade">
-                <h3>Projec 2</h3>
-                <p>JavaScript project example</p>
+            <div class="project-item js fade" onclick="opener('JavaScripth',
+                'A simple calculator web app that perform basic arithmetic operation with real-time input validation.',
+                'https://feranmi083.github.io/feranmi-portfolio/'
+            )">
+                <h3>JS Calculator</h3>
+                <p>Interactive calculator built with JavaScript</p>
             </div>
         </div>
     </section>
